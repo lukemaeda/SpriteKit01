@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="LVB-YS-i5n">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="CtS-rA-C9T">
+            <objects>
+                <viewController id="LVB-YS-i5n" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bdc-N1-crn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="LW4-mB-Rsl" customClass="SKView">
+                                <rect key="frame" x="0.0" y="63" width="320" height="283"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一緒に遭難したい人" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hWe-28-Atx">
+                                <rect key="frame" x="16" y="17" width="288" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="BAD-tK-zsz">
+                                <rect key="frame" x="16" y="349" width="288" height="5838.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">カーテンを開けると、そこは一面の銀世界だった。
+「うそ……」
+　思わず呆然とせずにはいられないくらい、月森邸の二階、蓮の私室から見る景色は真っ白だった。
+「これは、ちょっと、すごいな……」
+　庭も道路も向こう三軒両隣のお宅の屋根も、みんな雪に覆われていた.......... 続く</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oky-qb-6gf">
+                                <rect key="frame" x="272" y="22" width="39" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="本文">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButton" destination="LVB-YS-i5n" eventType="touchUpInside" id="Una-X9-rqU"/>
+                                    <segue destination="NtO-Lr-yOq" kind="custom" identifier="goSecondViewSegue" id="rag-DV-Yqe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="view01" destination="LW4-mB-Rsl" id="Vwh-mQ-KJI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="btX-cZ-eVz" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="272" y="232"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="KE4-8o-0mR">
+            <objects>
+                <viewController id="NtO-Lr-yOq" customClass="SecondViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="caE-iZ-ZOg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="0mg-m5-KuZ">
+                                <rect key="frame" x="16" y="48" width="288" height="494"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">カーテンを開けると、そこは一面の銀世界だった。
+「うそ……」
+　思わず呆然とせずにはいられないくらい、月森邸の二階、蓮の私室から見る景色は真っ白だった。
+「これは、ちょっと、すごいな……」
+　庭も道路も向こう三軒両隣のお宅の屋根も、みんな雪に覆われていた。
+　この部屋のカーテンを閉めたのが、ほぼ三時間前。どんより曇った空が重そうではあったが、ちらとも降ってなかった。予報では夜から降るかもしれないとは言っていたが、まさか昼過ぎからこんなに降るとは思ってなかった。
+　が、昼日中からカーテンしめきって薄暗くした室内で、そういう状況を必要とする密事に勤しんでいて、雪が降り出したのに気付かなかった方が悪い。
+　それを自覚しているから、蓮も香穂子も、この三時間の自分達の所行についてはあえて触れない。
+「どうりで静かなはずだ」
+「防音なのに外の音なんて聞こえるの？　え、それって、実は外に音が漏れるってこと！？」
+　急に真っ赤になって香穂子が動揺しまくる。
+「あ、いや、違う、そうじゃない。完全防音だから音が漏れる心配はない。安心していい」
+　理由に蓮もすぐ思い至り、同じく赤くなる。
+「そうではなくて、雪が降ると音が消えるような気がするんだ。雪に吸収されるというか」
+「そういうことならわかるよ、音のある場所を雪が埋めていくみたいだよね」
+「そう、そんな感じだ」
+「こんなに降ってたら、かえって気付いても良さそうだよね。こんなに静かなのはおかしいって」
+「ああ」
+　二人は窓辺に並んで、降る雪を見る。
+　積雪５センチはすでにありそうだ。
+　滅多に積もるほどの雪など経験したことのないハマっ子にしたら、これは大雪だ。
+「電車とか止まってそう。ここが歩いて来られる距離で良かった」
+「そうだな」
+　などと他人事のような会話を交わし、蓮ははっとなる。
+　歩ける距離ということは、歩いて来て、歩いて帰るということだ。この雪の中を！
+「急げ、香穂子」
+「へ？」
+　香穂子はきょとんとなる。
+「もしこれ以上降って、足止めなどという事態になったら大変だ」
+「そ、そっか」
+　その危険性に香穂子も気付いた。
+　つい先程まで充満していた事後の甘い空気は、またたく間にふっとんだ。
+「これだけ降っていたら、傘はささない方がいいだろうか」
+　本日の香穂子の服装を改めて見回し、蓮は考える。
+「これはどうだろう」
+　クローゼットの中から渋いハンチング帽を取り出し、香穂子にかぶせてみた。
+　紳士サイズなので、ずると目まで下がってしまう。
+「大きいか」
+　ちょっと考えてから、今度はマフラーを頭から首へと巻いてやった。
+　蓮がいつも使っている濃紺のマフラーは肌触りが良い。香穂子は、ほわりと顔回りが温かくなるのを感じた。これなら雪の中でも、頭や耳を守ってくれそうだ。
+「いいの？」
+「ああ」
+　窓に映った自分の姿を見てつい笑ってしまう。
+「昔の女優さんみたい」
+　レトロデザインのコートと案外似合っていた。
+「可愛いと思う……」
+　ぽそっとこぼれた呟き。
+　窓ガラスの中で、二人の目がぱちりと合う。
+「い、急ごう」
+　つい言ってしまった気恥ずかしさから、蓮は慌てて目を逸らした。
+　そんな蓮が香穂子にとっては可愛い。
+　でもそう言ったら困った顔をするだろうから、こっそり笑うに留めた。
+「ね、この帽子、かぶってみて」
+　ぴょんと跳ねて、背の高い彼の頭に帽子をのせてみた。
+　初めて見る蓮の帽子姿。
+「似合う、似合う！　ゴルフするイギリス人みたい」
+「誉め言葉と受け取っていいのか？」
+「もちろん。こんな隠しアイテムあるなんて知らなかった」
+「以前、祖父からもらった物なんだ」
+　などと、ふざけた会話はそこまでだった。
+
+　玄関扉を開いて、二人は固まってしまった。
+「……なんか、今、頭の中でシベコンが流れてる」
+「──なかなかうまい選曲だ」
+　北欧出身のシベリウス作曲、ヴァイオリン・コンチェルトの傑作がまさにぴったりな白銀の世界が目の前に広がっていた。
+　シベリウスも、こんな雪景色を見ながら書いたのではなかろうか。いや、北欧の雪だったらこんなものではすまないに違いない。
+　んが、日本の関東に生まれ育った二人には、この雪の降り方はシベリウスにとっての故郷に匹敵する感覚だ。
+　香穂子はヴァイオリンケースを体の前で抱きしめた。
+「今日はうちで預かろう」
+　それを見た蓮が、ヴァイオリンケースに手をかけた。
+「う、うん、そうしてもらえると助かる。よろしくお願い致します」
+　香穂子は素直にケースを差し出し、深々と頭を下げた。つまり、ヴァイオリンを持って帰るのが怖くなるほどの大雪なのだ。
+「行こう」
+「うん……！」
+　身軽になって出発だ。二人は雪道に踏み出した。
+
+　坂の多い地域なので慎重に歩く。
+　手に手をとって歌舞伎の道行きシーンのようだが、二人には必死の雪中行軍だ。
+「蓮、休憩しよう～。雪がつもっちゃった」
+　香穂子の情けない声が蓮の足を止めた。頭から巻いたマフラーもコートも白くなっている。
+　いつもなら日野邸に着いて良いだけの時間が経過していたが、まだ行程の半分過ぎといった所。不慣れな雪道は思うように歩けず、体力の消耗が激しい。急ぐのも大切だが、この辺りで一休みした方がいいかもしれない。
+　早じまいした八百屋の軒下で、雨宿りならぬ雪宿りとなった。
+「雪って溶けないんだね、こんなにくっついてる」
+　雪をはらいながら、香穂子は感心している。
+「だから積もるんじゃないのか」
+「そうなんだねぇ」
+　そんな当たり前なことも経験してみないと実感出来ないものだ。
+　元々人通りの多い道ではないが、今は見渡す限り二人以外誰もいない。
+「寒いね」
+　香穂子は手袋をしたままの手に息を吹きかける。
+「それでは温かくならないだろう」
+　蓮は香穂子の手を取り、コートの中で胸に抱いた。
+「ありがとう、あったかい～。蓮、冷たくない？」
+「大丈夫」
+　微笑んでくれる恋人に何を思ったのか。突然、がばっと、蓮のコートの合わせを全開する香穂子。
+「香、香穂子？」
+　ぎょっとした声にも構わず、香穂子は抱きつくと、その上からコートを合わせ直す。
+「この方が蓮もあったかいでしょ」
+「それはそうだが……」
+「早く家に着いた方が温かい、なんて言わないでね」
+　困った顔で、それでも笑みがこぼれてしまう。蓮もコートの上から香穂子の体に腕を回した。
+　人気がないので、安心して抱擁スタイルの温めっこだ。
+「すごいね、いっぱい降るね」
+「ああ」
+　視界をひたすら白く煙らす雪を見る。
+「あと一時間気付くのが遅ければ、どうなってたかな？」
+「この調子で降り続くなら、歩くのも困難になっていたかもしれない」
+「そうしたら、帰れなくなれたかな？」
+　奇妙な言い回しには、香穂子の本音が見え隠れする。
+「その時は、タクシーに無理言ってでも……」
+　気付かないふりをしたが、じ……と見上げてくる目に、蓮は言葉を途切らせた。
+「そんなに帰したい？」
+　香穂子のまなざしと言葉が、胸をわしづかみだ。
+　降参のため息を一つついて、コートの中の細い体を抱きしめる腕にそっと力をこめる。
+　温かな胸に頬をつけ、ドルチェにささやく蓮の鼓動を香穂子は聞く。
+「このままこうしてたら、どうなるかな……」
+「遭難するだろう」
+　一拍の間をおいて、二人はくつくつと笑う。
+「横浜で遭難、普通出来ないよ」
+「風邪をひく可能性も極めて高い」
+「その時は山小屋を探すの」
+「横浜で、か？」
+「そう、横浜で」
+　また笑いあう。
+　二人の笑い声を吸い込んで、雪はしんしんと降り続く。
+「静かだな」
+「うん、誰もいない……」
+「ああ……」
+　抱きしめ合って、雪を見つめて──。　
+　それだけの、二人だけの、静かな世界。
+「今、何考えてる？」
+「君は？」
+「このまま一緒に遭難するの、悪くないなぁ……なんて」
+　コートの中で背中に回された手が、きゅっと服を握ったのがわかった。
+　蓮は、凍ったように冷たい香穂子の髪を、そっと撫でる。
+「誰もいなくて、時間にも邪魔されないで、蓮とずっとこうしてるの」
+「ずっと……？」
+「ずっと……だよ」
+「君の提案は時折悪魔のささやきみたいで、困る」
+　降り積む雪に覆われて、人の存在も、日常のしがらみも、時間も、音すらも、ない。
+　今確かにあるのは、互いの温もりだけ。
+　それ以外には何もない、疑似遭難。
+　現実的に考えたら遭難なんてとんでもないが、恋に落ちた二人にはパラダイスの妄想に近い。
+　寒くて手足が凍えて痛い。
+　分厚い雪雲に覆われた空は、夜を早くする。
+　こんな所でこんなことをしていないで、早く行くべきだ、本当は。
+　けれど、一緒に遭難する夢に酔ってしまって動けない。
+　だがしかし、文明の力はそんな夢のような世界を簡単にぶちやぶってくれた。
+　香穂子のコートのポケットで携帯が鳴った。メールだ。
+「……のぞき見頭巾がいるのかな」
+「遭難する前に避難勧告かもしれない」
+　大きなため息をついて、香穂子は携帯を取り出した。
+　ところが何故か、メールを読む顔がだんだんと笑顔に変わっていった。
+「山小屋、見つけたよ」
+「何のことだ？」
+　香穂子の言葉と笑顔の意味がさっぱりわからない。
+「いいから、行こう！」
+　首を傾げる蓮の手を引っ張って、雪道へ飛び出す。
+　今にも走りたそうに、でも出来ないから上体前のめりで。
+「どうしたんだ、いきなり」
+「お父さんとお母さん、おばあちゃんちに泊まるって。お姉ちゃん、彼氏の家に泊まるって。うち、誰も帰ってこないよ」
+　くるりと振り返る笑顔。
+「山小屋、あったでしょ」
+　蓮は一瞬目を見開いて、それから困惑顔になった。
+「だからといって、俺が勝手に君の家に泊まるのは……」
+「うちに泊まってなんて言ってないもーん。そっか、蓮は私とお泊まりしたいのか～」
+　香穂子がにやあと笑う。
+　やられたとでもいうように、蓮は顔に手を当てた。
+「私達は大雪で遭難したの、そこに運良く山小屋があったの、ね？」
+「君の提案は、本当に悪魔の誘惑だ」
+　外国映画などで魅惑的な女性や恋人のことを「小悪魔」と呼んだりする男の心理を、こんな雪の中で理解するとは思ってもなかった。顔に当てた指の間から、蓮は小悪魔を小さく睨んだ。
+　ふ～んと、香穂子は唇をとがらせる。
+「嫌なら、いいよ」
+　ぷいと前に向き直り、一人でざかざかと歩き出した。
+　蓮はすぐにその手を取って、ぐいと引き寄せる。
+「ひゃあ！」
+　バランスを崩して蓮の腕の中に倒れる香穂子。
+「嫌がってる場合ではないのだろう？　俺達は遭難したんだ。この際、悪魔でも天使でも、助けてくれるなら何にでもすがる」
+　香穂子を後ろから抱きしめて、ささやく。
+「助けてくれるだろうか？」
+「助けてほしい？」
+　腕の中で振り仰いでくるいたずらっぽい笑顔に、蓮も微笑まずにはいられない。
+「ああ。このままでは、この雪の中で君を離せなくなって、凍死しかねない」
+「じゃあ、やっぱり山小屋行くしかないね」
+「そのようだ」
+　雪が降るのは自然の摂理。恋人達が離れられないのも然り。
+　手をつないで転ばないようバランスを取りながら、二人は雪道を山小屋に急いだ。
+
+「もし本当に遭難するとしたら、何が必要だと思う？」
+「水だな」
+「蓮はリアリストね」
+「そういう君は？」
+「チョコかな。持久戦に備えての栄養補給に」
+「十分リアリストだ」
+「コンビニはやってるよね。買っていこうよ、お水とチョコ」
+「他に必要なものは？」
+「うーん、雪山は寒いから温めあう相手が何より必要だなぁ。蓮が一番必要だよ」
+「君がこんなに口説き上手とは知らなかった……」
+
+END　　</mutableString>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7Sf-Zq-KhJ">
+                                <rect key="frame" x="251" y="15" width="53" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="戻る">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="orR-Ji-uPR" kind="unwind" unwindAction="mainViewReturnActionForSegue:" id="cWG-Yh-cDK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yZn-0z-bKS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="orR-Ji-uPR" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="681" y="232"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <nil key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
